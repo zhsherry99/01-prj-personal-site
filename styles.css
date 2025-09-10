@@ -91,10 +91,12 @@ footer {
     background-image: url('img/wall4.webp'); /* Uses your own wallpaper image from the img folder */
     background-size: contain; /* Zoom out to show more of the image */
     background-position: bottom; /* Position the image at the bottom */
+    background-attachment: fixed; /* Keep the background image fixed when scrolling */
     color: white;
-    padding: 40px 0 20px 0;
+    padding: 100px 0 60px 0; /* Make the banner much taller with more padding */
     text-align: center;
     position: relative;
+    min-height: 400px; /* Set a minimum height to make it even taller */
 }
 
 /* Removed the overlay so the image is clear */
@@ -134,9 +136,10 @@ footer {
 /* Style for side-by-side menu layout */
 .menu-container {
     display: flex; /* Put items side by side */
-    align-items: center; /* Center items vertically */
-    gap: 40px; /* Space between profile picture and menu */
+    align-items: stretch; /* Make both boxes same height */
+    gap: 0; /* No gap between the boxes */
     justify-content: center; /* Center the whole container */
+    min-height: 400px; /* Make the container taller */
 }
 
 .profile-side {
@@ -147,4 +150,46 @@ footer {
     display: flex;
     flex-direction: column; /* Stack menu buttons vertically */
     gap: 15px; /* Space between menu buttons */
+    flex: 1; /* Take up remaining space */
+    justify-content: center; /* Center menu buttons vertically */
+    padding: 40px; /* Add padding around menu buttons */
+}
+
+/* Style for extra box on the left of the menu */
+.extra-box {
+    background-color: #98FB98; /* Mint green background like other sections */
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+    max-width: 250px;
+}
+
+.extra-box h3 {
+    color: #8B0000; /* Dark scarlet color for heading */
+    margin-top: 0;
+}
+
+/* Style for wallpaper box on the left of the menu */
+.wallpaper-box {
+    background-image: url('img/wallpaper3.jpg'); /* Uses wallpaper 3.jpg from the img folder */
+    background-size: cover; /* Cover the entire box with the image */
+    background-position: center; /* Center the image */
+    color: white; /* White text to show on the wallpaper */
+    padding: 40px;
+    border-radius: 8px 0 0 8px; /* Round only left corners */
+    box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+    flex: 1; /* Take up half the screen */
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Center content vertically */
+}
+
+.wallpaper-box h3 {
+    color: white; /* White heading text */
+    margin-top: 0;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.7); /* Add shadow to make text readable */
+}
+
+.wallpaper-box p {
+    text-shadow: 1px 1px 2px rgba(0,0,0,0.7); /* Add shadow to make text readable */
 }
