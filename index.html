@@ -1,11 +1,99 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>My Personal Site</title>
-  <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <title>My Personal Website</title>
+    <!-- Link to the CSS file -->
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <!-- Add your HTML content here -->
+    <!-- Website Header with a cherry drawing background -->
+    <!-- The background image for this banner is set in styles.css using the .cherry-banner class -->
+    <header class="cherry-banner">
+        <h1>Welcome to My Personal Website</h1>
+        <nav>
+            <!-- Simple navigation links to each section -->
+            <a href="#about">About</a>
+            <a href="#skills">Skills</a>
+            <a href="#portfolio">Digital Art Portfolio</a>
+            <a href="#cat-blog">Cat Blog</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
+
+    <!-- About Section -->
+    <section id="about">
+        <h2>About Me</h2>
+        <!-- This is your photo. Make sure me.png is in the img folder. -->
+        <img src="img/me.png" alt="A photo of me" style="width:120px; border-radius: 50%; margin-bottom: 10px;">
+        <p>
+            <!-- Write a short introduction about yourself here -->
+            Hello! I'm a web development student learning HTML and CSS. I love creating digital art and blogging about my cat!
+        </p>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills">
+        <h2>My Skills</h2>
+        <ul>
+            <!-- List your skills here -->
+            <li>HTML</li>
+            <li>CSS</li>
+            <li>Digital Art</li>
+            <li>Blogging</li>
+        </ul>
+    </section>
+
+    <!-- Digital Art Portfolio Section -->
+    <section id="portfolio">
+        <h2>Digital Art Portfolio</h2>
+        <!-- Add your artwork images here -->
+        <div class="portfolio-gallery">
+            <img src="art1.jpg" alt="Digital Art 1">
+            <img src="art2.jpg" alt="Digital Art 2">
+            <!-- Add more images as you create them -->
+        </div>
+    </section>
+
+    <!-- Cat Blog Section -->
+    <section id="cat-blog">
+        <h2>Cat Blog</h2>
+        <!-- Add your blog posts about your cat here -->
+        <article>
+            <h3>My Cat's First Day Home</h3>
+            <p>
+                Today I brought my cat home! She is very playful and curious.
+            </p>
+        </article>
+        <article>
+            <h3>Cat's Favorite Toys</h3>
+            <p>
+                My cat loves chasing balls and playing with string.
+            </p>
+        </article>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact">
+        <h2>Contact Me</h2>
+        <!-- Simple contact form -->
+        <form>
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name">
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email">
+
+            <label for="message">Message:</label>
+            <textarea id="message" name="message"></textarea>
+
+            <button type="submit">Send</button>
+        </form>
+    </section>
+
+    <!-- Website Footer -->
+    <footer>
+        <p>&copy; 2025 My Personal Website</p>
+    </footer>
 </body>
 </html>
