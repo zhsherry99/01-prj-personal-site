@@ -87,7 +87,7 @@ footer {
 /* Header with a custom wallpaper background */
 /* The top banner now uses your 'wallpaper 2.webp' image from the img folder. */
 .cherry-banner {
-    background-image: url('img/wallpaper 2.webp'); /* Uses your own wallpaper image from the img folder */
+    background-image: url('img/wallpaper\ 3.jpg'); /* Uses your own wallpaper image from the img folder */
     background-size: cover;
     background-position: center;
     color: white;
