@@ -86,9 +86,9 @@ footer {
 }
 
 /* Header with a custom wallpaper background */
-/* The top banner now uses your 'wall4.webp' image from the img folder. */
+/* The top banner now uses your 'seamless-glittery-pink-stars-background.jpg' image from the img folder. */
 .cherry-banner {
-    background-image: url('img/wall4.webp'); /* Uses your own wallpaper image from the img folder */
+    background-image: url('img/seamless-glittery-pink-stars-background.jpg'); /* Uses your seamless-glittery-pink-stars-background.jpg image from the img folder */
     background-size: contain; /* Zoom out to show more of the image */
     background-position: bottom; /* Position the image at the bottom */
     background-attachment: fixed; /* Keep the background image fixed when scrolling */
