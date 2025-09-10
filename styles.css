@@ -85,9 +85,9 @@ footer {
 }
 
 /* Header with a custom wallpaper background */
-/* The top banner now uses your 'website wallpaper.jpg' image from the img folder. */
+/* The top banner now uses your 'wallpaper 2.webp' image from the img folder. */
 .cherry-banner {
-    background-image: url('img/website wallpaper.jpg'); /* Uses your own wallpaper image from the img folder */
+    background-image: url('img/wallpaper 2.webp'); /* Uses your own wallpaper image from the img folder */
     background-size: cover;
     background-position: center;
     color: white;
@@ -96,13 +96,9 @@ footer {
     position: relative;
 }
 
-/* Add a simple background overlay for better text readability */
+/* Removed the overlay so the image is clear */
 .cherry-banner::before {
-    content: "";
-    position: absolute;
-    top: 0; left: 0; right: 0; bottom: 0;
-    background: rgba(74, 144, 226, 0.6); /* semi-transparent blue overlay */
-    z-index: 0;
+    content: none;
 }
 .cherry-banner h1,
 .cherry-banner nav {
