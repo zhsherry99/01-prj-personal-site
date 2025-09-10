@@ -2,7 +2,7 @@
 
 /* Set a background color and font for the whole page */
 body {
-    background-color: #f9f9f9;
+    background-color: #A76571; /* Chocolate brown background for the whole page */
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
@@ -27,7 +27,7 @@ nav a {
 
 /* Add some space between sections */
 section {
-    background-color: white;
+    background-color: #98FB98; /* Mint green background for all sections */
     margin: 20px auto;
     padding: 20px;
     max-width: 700px;
