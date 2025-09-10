@@ -2,7 +2,7 @@
 
 /* Set a background color and font for the whole page */
 body {
-    background-color: #A76571; /* Chocolate brown background for the whole page */
+    background-color: #5b505e; /* Chocolate brown background for the whole page */
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
@@ -12,7 +12,7 @@ body {
 /* Style the header and navigation */
 header {
     background-color: #4a90e2;
-    color: white;
+    color: rgb(134, 74, 98);
     padding: 20px 0;
     text-align: center;
 }
@@ -37,7 +37,7 @@ section {
 
 /* Style section headings */
 section h2 {
-    color: #4a90e2;
+    color: #8B0000; /* Dark scarlet color for section headings */
 }
 
 /* Style the portfolio images */
@@ -86,11 +86,11 @@ footer {
 }
 
 /* Header with a custom wallpaper background */
-/* The top banner now uses your 'wallpaper 2.webp' image from the img folder. */
+/* The top banner now uses your 'wall4.webp' image from the img folder. */
 .cherry-banner {
-    background-image: url('img/wall4.jpg'); /* Uses your own wallpaper image from the img folder */
-    background-size: cover;
-    background-position: center;
+    background-image: url('img/wall4.webp'); /* Uses your own wallpaper image from the img folder */
+    background-size: contain; /* Zoom out to show more of the image */
+    background-position: bottom; /* Position the image at the bottom */
     color: white;
     padding: 40px 0 20px 0;
     text-align: center;
@@ -105,4 +105,46 @@ footer {
 .cherry-banner nav {
     position: relative;
     z-index: 1;
+}
+
+/* Style for menu buttons */
+.menu-links {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px; /* Space between menu buttons */
+}
+
+.menu-button {
+    display: block;
+    background-color: #4a90e2;
+    color: white;
+    text-decoration: none;
+    padding: 15px 30px;
+    border-radius: 8px;
+    font-weight: bold;
+    width: 200px;
+    text-align: center;
+}
+
+.menu-button:hover {
+    background-color: #357abd; /* Darker blue when hovering */
+}
+
+/* Style for side-by-side menu layout */
+.menu-container {
+    display: flex; /* Put items side by side */
+    align-items: center; /* Center items vertically */
+    gap: 40px; /* Space between profile picture and menu */
+    justify-content: center; /* Center the whole container */
+}
+
+.profile-side {
+    flex-shrink: 0; /* Keep profile picture size fixed */
+}
+
+.menu-links-side {
+    display: flex;
+    flex-direction: column; /* Stack menu buttons vertically */
+    gap: 15px; /* Space between menu buttons */
 }
