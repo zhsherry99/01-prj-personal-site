@@ -1,91 +1,151 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <!-- Character encoding tells the browser how to read the text -->
     <meta charset="UTF-8">
-    <title>Home - My Personal Website</title>
-    <!-- Link to the CSS file -->
+    <!-- This makes the website look good on mobile devices -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- The title that appears in the browser tab -->
+    <title>Sherry's Personal Website</title>
+    <!-- Link to our CSS file for styling -->
     <link rel="stylesheet" href="styles.css">
-    <!-- Redirect to menu.html automatically -->
-    <meta http-equiv="refresh" content="0; url=menu.html">
-</head>
-<body>
-    <!-- Simple message for users who don't get redirected automatically -->
-    <div style="text-align: center; padding: 50px;">
-        <h1>Welcome!</h1>
-        <p>If you are not redirected automatically, <a href="menu.html">click here to go to the main menu</a>.</p>
-    </div>
-</body>
-</html>
-
-<!DOCTYPE html>
-<html la        <!-- Container to put two boxes side by side -->
-        <div class="menu-container">
-            <!-- Long box on the left with wallpaper background -->
-            <div class="wallpaper-box">
-                <!-- Text removed for cleaner look -->
-            </div>
-            <!-- Menu links on the right -->
-            <div class="menu-links-side">
-                <!-- Links to separate pages --><head>
-    <meta charset="UTF-8">
-    <title>Main Menu - My Personal Website</title>
-    <!-- Link to the CSS file -->
-    <link rel="stylesheet" href="styles.css">
-    <!-- Font Awesome icons -->
+    <!-- Font Awesome gives us social media and other icons -->
     <script src="https://kit.fontawesome.com/9e10993e74.js" crossorigin="anonymous"></script>
 </head>
 <body>
-    <!-- Website Header with a cherry drawing background -->
-    <header class="cherry-banner">
+    <!-- Navigation bar at the top of the page -->
+    <nav class="top-nav">
+        <!-- Logo/site name on the left -->
+        <div class="nav-logo">
+            <a href="#main">Sherry's Website</a>
+        </div>
+        <!-- Navigation links on the right -->
+        <div class="nav-links">
+            <a href="#about">About</a>
+            <a href="#skills">Skills</a>
+            <a href="#portfolio">Portfolio</a>
+            <a href="#cat-blog">Cat Blog</a>
+            <a href="#contact">Contact</a>
+        </div>
+    </nav>
+
+    <!-- This is the main header with the big background image -->
+    <header class="cherry-banner" id="main">
         <h1>Sherry's Website</h1>
-        <!-- Scroll down message with arrow -->
+        <!-- Arrow message telling visitors to scroll down -->
         <div class="scroll-message">
             <p>Scroll down for more</p>
             <i class="fas fa-chevron-down"></i>
         </div>
     </header>
 
-    <!-- Main Menu Section -->
-    <section id="main-menu">
-        <h2>Choose a Page to Visit</h2>
-        <!-- Container to put two boxes side by side -->
-        <div class="menu-container">
-            <!-- Long box on the left with wallpaper background -->
-            <div class="wallpaper-box">
-                <!-- Text removed for cleaner look -->
+    <!-- About section with information about me -->
+    <section id="about">
+        <h2>About Me</h2>
+        <!-- Paragraph with personal information -->
+        <p>
+            Hello there! My name is Sherry Zhang and I am currently a freshman in college intending to study UX/UI Design and potentially Art and Design at the University of Michigan, Ann Arbor. My hobbies include drawing, classical music, watching animated movies and tv shows. My interests include history and using technology to make every day things accessible to everyone. This is the first website I'm attempting to make. I'm planning on turning this page into an art portfolio to share some of my digital art and animation as well as some ongoing projects (once I figure out how to do that). Maybe I'll turn it into a cat blog…(*ˊᗜˋﾉﾉ
+        </p>
+    </section>
+
+    <!-- Skills section showing programming and design skills -->
+    <section id="skills">
+        <h2>My Skills</h2>
+        <!-- Container to display skills in a row -->
+        <div class="skills-container">
+            <!-- Each skill has an icon and label -->
+            <div class="skill-item">
+                <i class="fab fa-html5"></i> <!-- HTML icon -->
+                <p>HTML</p>
             </div>
-            <!-- Menu links on the right -->
-            <div class="menu-links-side">
-                <!-- Links to separate pages -->
-                <a href="about.html" class="menu-button">About</a>
-                <a href="portfolio.html" class="menu-button">Digital Art Portfolio</a>
-                <a href="cat-blog.html" class="menu-button">Cat Blog</a>
-                <a href="socials.html" class="menu-button">Contact</a>
+            <div class="skill-item">
+                <i class="fab fa-css3-alt"></i> <!-- CSS icon -->
+                <p>CSS</p>
+            </div>
+            <div class="skill-item">
+                <i class="fab fa-python"></i> <!-- Python icon -->
+                <p>Python</p>
             </div>
         </div>
     </section>
 
-    <!-- Website Footer -->
+    <!-- Portfolio section for displaying artwork -->
+    <section id="portfolio">
+        <h2>Art Portfolio</h2>
+        <!-- Gallery area where artwork images will go -->
+        <div class="portfolio-gallery">
+            <p>Work in progress - come back soon!</p>
+            <!-- Add artwork images here when ready -->
+        </div>
+    </section>
+
+    <!-- Blog section about cats -->
+    <section id="cat-blog">
+        <h2>Cat Blog</h2>
+        <!-- Blog posts are wrapped in article tags -->
+        <article>
+            <h3>My Cat Came Home!</h3>
+            <p>
+                Today I brought my cat home! She is very playful and curious.
+            </p>
+        </article>
+        <article>
+            <h3>Cat's Favorite Toys</h3>
+            <p>
+                My cat loves chasing balls and playing with string.
+            </p>
+        </article>
+    </section>
+
+    <!-- Contact section with social media links -->
+    <section id="contact">
+        <h2>Contact Me</h2>
+        <p>Feel free to reach out to me through any of these platforms:</p>
+        
+        <!-- Social media icons arranged in a row -->
+        <div class="social-container">
+            <!-- Each social item has an icon and label -->
+            <div class="social-item">
+                <i class="fab fa-instagram"></i> <!-- Instagram icon -->
+                <p>Instagram</p>
+            </div>
+            <div class="social-item">
+                <i class="fab fa-linkedin"></i> <!-- LinkedIn icon -->
+                <p>LinkedIn</p>
+            </div>
+            <div class="social-item">
+                <i class="fab fa-github"></i> <!-- GitHub icon -->
+                <p>GitHub</p>
+            </div>
+            <div class="social-item">
+                <i class="fas fa-envelope"></i> <!-- Email icon -->
+                <p>Email</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer at the bottom of the page -->
     <footer>
-        <p>&copy; 2025 My Personal Website</p>
+        <p>&copy; 2025 Sherry's Personal Website</p>
     </footer>
 
-    <!-- Simple JavaScript to make banner transparent when scrolling -->
+    <!-- JavaScript code to make the header more transparent when scrolling -->
     <script>
-        // Listen for scroll events on the page
+        // Listen for when the user scrolls the page
         window.addEventListener('scroll', function() {
-            // Get the banner element
+            // Find the header element
             var banner = document.querySelector('.cherry-banner');
             
-            // If user has scrolled down more than 50 pixels
+            // If user scrolled down more than 50 pixels
             if (window.scrollY > 50) {
-                // Add the 'scrolled' class to make it transparent
+                // Make the header more transparent
                 banner.classList.add('scrolled');
             } else {
-                // Remove the 'scrolled' class when back at top
+                // Keep header normal when at the top
                 banner.classList.remove('scrolled');
             }
         });
     </script>
+
 </body>
 </html>
